@@ -1,0 +1,9 @@
+term screen-256color
+export DISPLAY=localhost:10.0
+
+screen -t nvim 0
+screen -t work 1
+screen -t glances 2 glances
+screen -t etc 3
+screen -t etc2 4
+select 0
