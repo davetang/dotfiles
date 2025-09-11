@@ -3,7 +3,9 @@ export DISPLAY=localhost:10.0
 
 screen -t nvim 0
 screen -t work 1
-screen -t glances 2 glances
+screen -t glances 2
 screen -t etc 3
 screen -t etc2 4
+screen -t etc3 5
+screen -t etc4 6
 select 0
