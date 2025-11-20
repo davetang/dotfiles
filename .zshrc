@@ -1,15 +1,5 @@
-# The GPG_TTY environment variable tells gpg which terminal to use for pinentry (the passphrase prompt). Without it, gpg might fail to ask for your passphrase, especially inside terminal emulators or SSH sessions.
-export GPG_TTY=$(tty)
-
-# Zsh extended globbing
-# mv ^file_to_keep.txt /destination/
-setopt extended_glob
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-bindkey "^[[1;3C" forward-word
-bindkey "^[[1;3D" backward-word
 
 [ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
 
@@ -102,6 +92,16 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+#
+# The GPG_TTY environment variable tells gpg which terminal to use for pinentry (the passphrase prompt). Without it, gpg might fail to ask for your passphrase, especially inside terminal emulators or SSH sessions.
+export GPG_TTY=$(tty)
+
+# Zsh extended globbing
+# mv ^file_to_keep.txt /destination/
+setopt extended_glob
+
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
