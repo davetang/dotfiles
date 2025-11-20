@@ -1,6 +1,10 @@
 # The GPG_TTY environment variable tells gpg which terminal to use for pinentry (the passphrase prompt). Without it, gpg might fail to ask for your passphrase, especially inside terminal emulators or SSH sessions.
 export GPG_TTY=$(tty)
 
+# Zsh extended globbing
+# mv ^file_to_keep.txt /destination/
+setopt extended_glob
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
