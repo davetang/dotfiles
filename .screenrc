@@ -1,11 +1,11 @@
 term screen-256color
 export DISPLAY=localhost:10.0
 
-screen -t nvim 0
-screen -t work 1
-screen -t glances 2
-screen -t etc 3
-screen -t etc2 4
-screen -t etc3 5
-screen -t etc4 6
+screen -t nvim 0 zsh
+screen -t work 1 zsh
+screen -t glances 2 zsh
+screen -t etc 3 zsh
+screen -t etc2 4 zsh
+screen -t etc3 5 zsh
+screen -t etc4 6 zsh
 select 0
