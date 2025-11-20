@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-[ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -92,7 +90,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-#
+
+[ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
+
 # The GPG_TTY environment variable tells gpg which terminal to use for pinentry (the passphrase prompt). Without it, gpg might fail to ask for your passphrase, especially inside terminal emulators or SSH sessions.
 export GPG_TTY=$(tty)
 
