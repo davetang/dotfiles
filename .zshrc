@@ -1,6 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# fixes the issue when using macOS to SSH into a Linux machine
+# macOS sets LC_CTYPE=UTF-8 and forwards it over SSH to the Linux server
+# use `sudo locale-gen en_US.UTF-8` if missing
+export LC_CTYPE=en_AU.UTF-8
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
