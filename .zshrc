@@ -75,6 +75,9 @@ ZSH_THEME="candy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+#
+# git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
+#
 plugins=(git screen systemadmin zsh-vi-mode z copybuffer)
 
 source $ZSH/oh-my-zsh.sh
