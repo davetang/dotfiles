@@ -78,7 +78,7 @@ ZSH_THEME="candy"
 #
 # git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
 #
-plugins=(git screen systemadmin zsh-vi-mode z copybuffer)
+plugins=(git screen systemadmin zsh-vi-mode z copybuffer fzf)
 
 source $ZSH/oh-my-zsh.sh
 
