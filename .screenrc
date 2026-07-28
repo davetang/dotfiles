@@ -1,6 +1,5 @@
 term screen-256color
 truecolor on
-export DISPLAY=localhost:10.0
 
 screen -t nvim 0 zsh
 screen -t work 1 zsh
