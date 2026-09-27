@@ -1,5 +1,6 @@
 term screen-256color
 truecolor on
+status top right
 
 screen -t nvim 0 zsh
 screen -t work 1 zsh
