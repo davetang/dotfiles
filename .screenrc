@@ -2,6 +2,9 @@ term screen-256color
 truecolor on
 status top right
 
+bufferfile $HOME/.screen-exchange
+bindkey -m > eval "stuff ' '" writebuf "exec $HOME/bin/sendcb $HOME/.screen-exchange"
+
 screen -t nvim 0 zsh
 screen -t work 1 zsh
 screen -t glances 2 zsh
